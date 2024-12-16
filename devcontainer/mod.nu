@@ -40,10 +40,8 @@ export-env {
                 TIMEZONE: Asia/Shanghai
             }
             scripts: [
-                #"export http_proxy=http://172.178.1.111:7890"
-                #"export https_proxy=http://172.178.1.111:7890"
-                #"npm config set registry https://registry.npmjs.org"
-                "npm config set registry http://nexus.s/repository/npm/"
+                "npm config set registry https://registry.npmjs.org"
+                #"npm config set registry http://nexus.s/repository/npm/"
                 "npm i"
                 "mv node_modules /opt"
                 "ln -s /opt/node_modules node_modules"
